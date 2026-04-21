@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eml-pytorch"
+version = "0.1.0"
+authors = [
+    { name="Your Name", email="your.email@example.com" },
+]
+description = "Exp-Minus-Log (EML) operator for PyTorch"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+triton = ["triton"]
+dev = ["pytest", "black", "isort"]
+
+[project.urls]
+"Homepage" = "https://github.com/你的用户名/eml-pytorch"
+"Bug Tracker" = "https://github.com/你的用户名/eml-pytorch/issues"
