@@ -8,7 +8,7 @@ version = "0.1.0"
 authors = [
     { name="Your Name", email="your.email@example.com" },
 ]
-description = "Exp-Minus-Log (EML) operator for PyTorch"
+description = "Hardware-efficient Exp-Minus-Log (EML) operator for PyTorch"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
@@ -20,10 +20,6 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-[project.optional-dependencies]
-triton = ["triton"]
-dev = ["pytest", "black", "isort"]
-
 [project.urls]
-"Homepage" = "https://github.com/你的用户名/eml-pytorch"
-"Bug Tracker" = "https://github.com/你的用户名/eml-pytorch/issues"
+"Homepage" = "https://github.com/UyNewNas/eml-pytorch"
+"Bug Tracker" = "https://github.com/UyNewNas/eml-pytorch/issues"
