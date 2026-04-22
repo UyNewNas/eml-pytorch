@@ -12,7 +12,7 @@ description = "Hardware-efficient Exp-Minus-Log (EML) operator for PyTorch"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
-    "torch>=2.0",
+    "torch>=2.5",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
