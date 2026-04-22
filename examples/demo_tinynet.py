@@ -1,11 +1,3 @@
-'''
-Author: slava
-Date: 2026-04-22 08:36:15
-LastEditTime: 2026-04-22 08:36:40
-LastEditors: ch4nslava@gmail.com
-Description: 
-
-'''
 import torch
 import torch.nn as nn
 from eml_pytorch import TinyEMLNet
