@@ -1,0 +1,4 @@
+torch>=2.5
+triton; platform_system == "Linux"  # optional GPU acceleration
+numpy
+pytest  # for testing
