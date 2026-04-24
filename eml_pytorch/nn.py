@@ -16,6 +16,19 @@ class EMLNode(nn.Module):
         v = torch.clamp(v, min=1e-8)
         return eml(u, v)
 
+class EMLActivation(nn.Module):
+    """
+    将 EML 算子封装为标准的单输入激活函数。
+    内部执行 eml(x, c)，其中 c 是可学习的标量参数。
+    """
+    def __init__(self, c_init=1.0):
+        super().__init__()
+        self.c = nn.Parameter(torch.tensor(c_init, dtype=torch.float32))
+
+    def forward(self, x):
+        c_expanded = self.c.expand_as(x)
+        return torch.ops.eml_pytorch.eml(x, c_expanded)
+
 class TinyEMLNet(nn.Module):
     def __init__(self, input_dim=5):
         super().__init__()
