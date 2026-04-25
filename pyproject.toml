@@ -1,12 +1,12 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "setuptools-scm>=8.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "eml-pytorch"
-version = "0.1.0"
+dynamic = ["version"]
 authors = [
-    { name="Your Name", email="your.email@example.com" },
+    { name="UyNewNas", email="your.email@example.com" },
 ]
 description = "Hardware-efficient Exp-Minus-Log (EML) operator for PyTorch"
 readme = "README.md"
@@ -23,3 +23,7 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/UyNewNas/eml-pytorch"
 "Bug Tracker" = "https://github.com/UyNewNas/eml-pytorch/issues"
+"Documentation" = "https://uynewnas.github.io/eml-pytorch/"
+
+[tool.setuptools_scm]
+write_to = "eml_pytorch/_version.py"

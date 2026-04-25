@@ -7,8 +7,13 @@ project = "eml-pytorch"
 copyright = "2026, UyNewNas"
 author = "UyNewNas"
 
-version = "0.3.0"
-release = "0.3.0"
+try:
+    from eml_pytorch import __version__
+    release = __version__
+    version = ".".join(__version__.split(".")[:2])
+except ImportError:
+    release = "0.0.0.dev0"
+    version = "0.0"
 
 extensions = [
     "sphinx.ext.autodoc",
