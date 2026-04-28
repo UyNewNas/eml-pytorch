@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# setuptools-scm generated version file
+eml_pytorch/_version.py
+
 # C extensions
 *.so
 
@@ -70,6 +73,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+docs/build/
 
 # PyBuilder
 .pybuilder/
